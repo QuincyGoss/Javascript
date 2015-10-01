@@ -1,0 +1,25 @@
+//name = batwing
+var batwing = {
+	//status = 1 property variable with "ready" with , operator
+	status: "Ready",
+	//rescue = 1 method - anonymous function 
+	rescueBatman: function() {
+		document.write("Locating his transponder...initiating launch...");
+		
+	}	
+}
+/*
+if (batwing.status === "Ready") {
+	batwing.rescueBatman();
+}
+*/
+
+var utilities = {
+	printAllMembers: function(targetObject) {
+		for (i in targetObject) {
+			document.write("<br />" + targetObject[i]);
+		}
+	}
+}
+
+utilities.printAllMembers(batwing);
